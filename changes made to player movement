@@ -1,0 +1,10 @@
+    public void speed_up()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = 3.0f;
+        Invoke("normal_speed", 3.0f); 
+    }
+
+    public void normal_speed()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+    }
